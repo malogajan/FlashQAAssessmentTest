@@ -17,7 +17,7 @@ https://demowebshop.tricentis.com/
 • Checkout items from cart and validate checkout.
 • Fill in all required information for checkout and complete transaction.
 • Navigate to my account and validate order is created successful.
-• Upload your source code into a git repository with a Readme file (send link))
+
 
 
 ✅ Positive Scenario
