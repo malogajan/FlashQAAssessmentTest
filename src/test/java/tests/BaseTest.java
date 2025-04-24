@@ -15,8 +15,8 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         // Set the geckodriver path for Firefox browser
-        WebDriverManager.firefoxdriver().setup(); // This downloads and sets the correct path
-        driver = new FirefoxDriver();
+        // Set the path to geckodriver if not already in PATH
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\jan.seopa\\Downloads\\geckodriver-v0.35.0-win64\\geckodriver.exe");
 
         // Initialize the Firefox browser
         driver = new FirefoxDriver();
