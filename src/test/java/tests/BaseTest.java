@@ -1,5 +1,6 @@
 package tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,7 +15,8 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         // Set the geckodriver path for Firefox browser
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\jan.seopa\\Downloads\\geckodriver-v0.35.0-win64\\geckodriver.exe");
+        WebDriverManager.firefoxdriver().setup(); // This downloads and sets the correct path
+        driver = new FirefoxDriver();
 
         // Initialize the Firefox browser
         driver = new FirefoxDriver();
